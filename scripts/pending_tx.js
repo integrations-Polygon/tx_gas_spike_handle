@@ -13,7 +13,7 @@ async function call() {
     const max_round = 3;
     let round_count = 1;
 
-    const gas_resp = await fetch('https://gasstation-mumbai.matic.today/v2')
+    const gas_resp = await fetch('https://gasstation-testnet.polygon.technology/v2')
     const gas = await gas_resp.json();
     // const gasPrice = parseInt((gas.fast.maxFee) * 1e9);
     const gasPrice = parseInt((1) * 1e8); //only for testing
