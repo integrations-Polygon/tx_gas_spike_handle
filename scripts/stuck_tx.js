@@ -17,7 +17,6 @@ async function call() {
     const gas_resp = await fetch('https://gasstation-testnet.polygon.technology/v2')
     const gas = await gas_resp.json();
     const gasPrice = parseInt((gas.fast.maxFee) * 1e9);
-    // const gasPrice = parseInt((2) * 1e9);
 
     console.log('stuck tx hash: ', stuck_txhash)
     console.log('checking status....')
